@@ -1,0 +1,194 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* test */
+
+body {
+    background-color: #f7b2b4;
+    color: #3e69b3;
+    opacity: 1;
+  }
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+}
+
+#Img {
+    background: url(https://cdn.discordapp.com/attachments/909270304931577936/913444372220100668/Nbn.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius : 50%;
+    background-position: center;
+    border: 3px #3e69b3 solid;
+    background-color: #F1FFFA;
+}
+
+#divImg {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#welcome {
+    text-align: center;
+}
+
+#name {
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+
+
+
+
+#text {
+    margin: 10px;
+    background-color: #fad30d;
+    text-align: center;
+
+}
+
+
+
+#submit {
+    background-color: #fad30d;
+    border: 3px #3e69b3 solid;
+    color: #3e69b3;
+    font-weight: bold;
+    border-radius: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+#Norejouer {
+    display : none
+}
+
+#rejouer {
+    background-color: #fad30d;
+    border: 3px #3e69b3 solid;
+    color: #3e69b3;
+    font-weight: bold;
+    border-radius: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 40px 0;
+}
+
+
+#answer, #answer2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text {
+    width: 300px;
+    height: 50px;
+    border: none;
+    background-color: #fad30d;
+    color: #3e69b3;
+    font-weight: bold;
+    border: 3px #3e69b3 solid;
+    opacity: 1
+}
+
+#nbTentatives {
+    text-align: center;
+    font-weight: bold;
+}
+
+#answer, #answer2 { 
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+#welcome {
+    font-weight: bold;
+}
+
+#text::placeholder {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        display : none;
+    }
+
+
+    #Img {
+        background: url(https://cdn.discordapp.com/attachments/909270304931577936/913444372220100668/Nbn.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        border-radius : 50%;
+        background-position: center;
+        border: 3px #3e69b3 solid;
+        background-color: #F1FFFA;
+    }
+
+    #divImg {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px
+    }
+
+    #answer, #answer2 { 
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+  }
