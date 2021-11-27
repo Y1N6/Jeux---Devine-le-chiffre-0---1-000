@@ -6,6 +6,11 @@ let answer = document.getElementById("answer");
 let audio = new Audio(
   "https://initiativedeveloppeur.fr/wp-content/uploads/2019/03/sf_public_jeunes_75p_applaudissements_01.mp3"
 );
+
+// Confetti
+const confettiSettings = {"target":"confetti-holder","max":"80","size":"1","animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"25","rotate":true,"width":"2021","height":"1026","start_from_edge":true,"respawn":true};
+const confetti = new ConfettiGenerator(confettiSettings);
+
 // Créér un nombre aléatoire
 const random = Math.floor(Math.random() * 1000) + 1;
 console.log(random);
@@ -63,13 +68,13 @@ document.getElementById("text").addEventListener("change", function (e) {
     document.getElementById("text").style.display = "none";
     document.getElementById("submit").style.display = "none";
     document.getElementById("Norejouer").style.display = "block";
-    audio.play();
+    audio.play(); /* Joue le son */
+    confetti.render(); /* Applique les confettis */
   }
 });
 
-// reload la page suite appui sur bouton "rejouer"
 document.getElementById("rejouer").addEventListener("click", function () {
-  location.reload();
+  location.reload(); /* Rafraîchit la page */
 });
 
 // Affiche la réponse final une fois trouvé
