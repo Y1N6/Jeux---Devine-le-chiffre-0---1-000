@@ -18,11 +18,11 @@ body {
   
 canvas {
     /* Pour que le canvas prenne l'espace de tout l'écran */
-    position:fixed; 
-    top:0;
-    left:0;
+    position: fixed; 
+    top: 0;
+    left: 0;
     /* Pour qu'il soit placé derrière les autres éléments */
-    z-index:-1; 
+    z-index: -1; 
     
 }
 
